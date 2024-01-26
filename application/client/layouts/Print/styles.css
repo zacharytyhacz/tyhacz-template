@@ -1,0 +1,33 @@
+.print-container {
+    min-width: 1200px;
+}
+.print-container > button{
+    margin: 3%;
+}
+.print-header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5%;
+}
+.print-header .info {
+    margin-left: 2%;
+}
+.print-header p{
+    margin: 0;
+}
+.print-header .qr-code{
+    text-align: right;
+    flex-grow: 1;
+}
+
+.print-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.print-content .print-table {
+    flex-basis: 48%;
+    width: 48%;
+    margin: 1%;
+}

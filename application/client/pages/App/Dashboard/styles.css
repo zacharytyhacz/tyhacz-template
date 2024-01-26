@@ -1,0 +1,34 @@
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.dashboard-container .app-card {
+    flex-grow: 1;
+}
+.dashboard-container .app-card tr td:last-child {
+    text-align: right;
+}
+.dashboard-container .app-card:nth-child(1),
+.dashboard-container .app-card:nth-child(3) {
+    margin-left: 0;
+}
+.dashboard-container .app-card:nth-child(2),
+.dashboard-container .app-card:nth-child(4) {
+    margin-right: 0;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .dashboard-container .app-card {
+        width: calc(100% - 32px - 24px);
+        min-height: unset;
+        margin: 12px 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .dashboard-container .app-card tr td,
+    .dashboard-container .app-card tr th {
+        font-size: 12px
+    }
+}

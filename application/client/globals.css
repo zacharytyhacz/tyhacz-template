@@ -1,0 +1,63 @@
+html, body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: #f7f6ff;
+}
+
+button {
+    cursor: pointer;
+}
+button:disabled,
+button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.primary,
+.secondary {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 7px 22px;
+    min-width: 125px;
+    white-space: pre;
+}
+
+.primary {
+    background: #10086D;
+    color: #FFF;
+    border: 1px solid #10086D;
+}
+.secondary {
+    background: #EAE9FF;
+    color: #10086D;
+    border: 1px solid #10086D;
+}
+
+table {
+    width: 100%;
+}
+table th {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    color: #707070;
+}
+table td {
+    color: #060047;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 0;
+}
+.react-tabs__tab button {
+    background: 0;
+    border: 0;
+    width: 16px;
+    vertical-align: middle;
+    margin-left: 12px;
+}
+@media only screen and (max-width: 768px) {
+    .primary,
+    .secondary {
+        font-size: 18px;
+    }
+}
